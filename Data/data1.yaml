@@ -1,0 +1,33 @@
+# :后面必须带空格
+#name: "lili"
+#Name: "lili"
+
+
+#info1: {'name': 'lili','age': '18'}
+
+
+#info2:
+#  name:
+#    dawei: 'weiwei'
+#    weiwei: 'sss'
+#  age: '10'
+
+#data:
+#  - name: 'lili'
+#  - age: 15
+
+#
+info: &data
+  name: lili
+  age: 18
+
+
+con: &da
+  <<: *data
+  address: '少时诵诗书'
+ee:
+  <<: *da
+  sss: 'ssaa'
+
+
+
